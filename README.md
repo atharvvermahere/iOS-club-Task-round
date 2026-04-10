@@ -49,4 +49,4 @@ Check out the app in action!
 
 ## Video Demonstration
 
-[Click here to watch the full demo video](assets/qrscan.mp4)
+[Click here to watch the full demo video](assets/qrappdemo.mp4)
