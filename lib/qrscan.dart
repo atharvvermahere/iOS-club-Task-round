@@ -1,8 +1,11 @@
+import 'Corelogic.dart';
 import 'package:flutter/material.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class ScannerScreen extends StatelessWidget {
+  const ScannerScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,7 +32,7 @@ class ScannerScreen extends StatelessWidget {
         title: Text("Scan Result"),
         content: Text(code),
         actions: [
-          if (isUrl) 
+          if (isUrl)
             TextButton(
               onPressed: () => launchUrl(Uri.parse(code)), // [cite: 14, 36]
               child: Text("Open URL"),

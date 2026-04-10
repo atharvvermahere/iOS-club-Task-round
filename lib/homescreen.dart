@@ -1,3 +1,8 @@
+import 'package:flutter/material.dart';
+import 'Corelogic.dart';
+import 'qrscan.dart';
+import 'qrgen.dart';
+
 class HomeScreen extends StatefulWidget {
   @override
   _HomeScreenState createState() => _HomeScreenState();
@@ -28,17 +33,26 @@ class _HomeScreenState extends State<HomeScreen> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               ElevatedButton(
-                onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => ScannerScreen())),
+                onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => ScannerScreen()),
+                ),
                 child: Text("Scan QR"),
               ),
               ElevatedButton(
-                onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => GeneratorScreen())),
+                onPressed: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => GeneratorScreen()),
+                ),
                 child: Text("Generate QR"),
               ),
             ],
           ),
           Divider(),
-          Text("Recent Scans", style: TextStyle(fontWeight: FontWeight.bold)), // [cite: 10]
+          Text(
+            "Recent Scans",
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ), // [cite: 10]
           Expanded(
             child: ListView.builder(
               itemCount: _history.length,

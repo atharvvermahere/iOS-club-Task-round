@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 
 class GeneratorScreen extends StatefulWidget {
+  const GeneratorScreen({super.key});
+
   @override
   _GeneratorScreenState createState() => _GeneratorScreenState();
 }
