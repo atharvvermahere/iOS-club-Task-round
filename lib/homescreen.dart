@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'Corelogic.dart';
+import 'corelogic.dart';
 import 'qrscan.dart';
 import 'qrgen.dart';
 
